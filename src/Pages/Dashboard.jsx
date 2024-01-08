@@ -7,6 +7,7 @@ import {
   TabPanel,
 } from "@material-tailwind/react";
 import Cardd from "./Card";
+import Graph from "./Graph";
 
 const Dashboard = () => {
   const [activeTab, setActiveTab] = React.useState("card");
@@ -19,8 +20,7 @@ const Dashboard = () => {
     {
       label: "Graph",
       value: "graph",
-      desc: `Because it's about motivating the doers. Because I'm here
-          to follow my dreams and inspire other people to follow their dreams, too.`,
+      desc:<Graph/>,
     },
     {
       label: "3D Card",
