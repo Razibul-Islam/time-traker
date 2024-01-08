@@ -20,14 +20,12 @@ const Dashboard = () => {
     {
       label: "Graph",
       value: "graph",
-      desc:<Graph/>,
+      desc: <Graph />,
     },
     {
       label: "3D Card",
       value: "3dCard",
-      desc: `We're not always in the position that we want to be at.
-          We're constantly growing. We're constantly making mistakes. We're
-          constantly trying to express ourselves and actualize our dreams.`,
+      desc: <div className="mt-10 text-center text-5xl">Coming soooooon!</div>,
     },
   ];
   return (

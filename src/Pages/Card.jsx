@@ -12,7 +12,9 @@ const Cardd = () => {
   const [datas, setDatas] = useState([]);
   const { user } = useContext(Authcontext);
   useEffect(() => {
-    fetch(`http://localhost:4000/getWorkingTime?userEmail=${user?.email}`)
+    fetch(
+      `https://time-backend.vercel.app/getWorkingTime?userEmail=${user?.email}`
+    )
       .then((res) => res.json())
       .then((data) => setDatas(data));
   }, [user?.email]);

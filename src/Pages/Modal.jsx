@@ -23,7 +23,7 @@ const Modal = ({ text, resetStopwatch, time }) => {
       workingHour: time,
       userEmail: user?.email,
     };
-    fetch("http://localhost:4000/workingTimePost", {
+    fetch("https://time-backend.vercel.app/workingTimePost", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -32,7 +32,6 @@ const Modal = ({ text, resetStopwatch, time }) => {
     })
       .then((res) => res.json())
       .then((data) => alert("Your Working Hour Added!"));
-    // console.log(fullProject);
   };
 
   const handleOpen = () => setOpen(!open);
